@@ -29,7 +29,7 @@ export default function Home() {
     </div>
   );
 }
-export const Icons = {
+const Icons = {
   gitHub: (props: IconProps) => (
     <svg viewBox="0 0 438.549 438.549" {...props}>
       <path
