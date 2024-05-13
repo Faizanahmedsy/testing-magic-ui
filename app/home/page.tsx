@@ -1,3 +1,4 @@
+"use client";
 import DotPattern from "@/components/magicui/dot-pattern";
 import { cn } from "@/lib/utils";
 import React from "react";
@@ -9,12 +10,14 @@ export default function page() {
   return (
     <>
       <div className="z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black dark:text-white h-screen flex  justify-center items-center flex-col">
-        <p>Faizanahmed</p>
+        <p>Faizan&apos;s Den</p>
         <div className="absolute bottom-0">
           <Dock>
+            {/* <div onClick={() => alert("foo")}> */}
             <DockIcon>
-              <Icons.gitHub className="h-6 w-6" />
+              <Icons.gitHub className="h-6 w-6" onClick={() => alert("foo")} />
             </DockIcon>
+            {/* </div> */}
             <DockIcon>
               <Icons.googleDrive className="h-6 w-6" />
             </DockIcon>
